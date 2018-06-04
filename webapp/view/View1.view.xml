@@ -1,0 +1,40 @@
+<mvc:View controllerName="Layouts.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<!--Los Grids tienen un total de 12 columnas distribuidas uniformemente dentro del ancho de la pantalla-->
+					<!--Cada elemento ocupará un determinado número de columnas y cuando se hayan superado las 12 se pasará a la fila siguiente-->
+					<l:Grid defaultSpan="XL4 L4 M6 S12" >
+						<!--Con la propiedad defaultSpan definimos cuántas columnas ocupará cada elemnto en función del tamaño del dispositivo-->
+						<!--Los textos ocuparán 4 columnas de las 12 cuando el tamaño del dispositivo sea muy grande, 6 si es mediano ,...-->
+						<!--Con defaultIndent añadimos columnas en blanco delante de cada blque de columnas-->
+						<l:content>
+							<VBox>
+								<Text text="Producto 1"/>
+								<Text text="Producto 2"/>
+								<Text text="Producto 3"/>
+							</VBox>
+							<VBox>
+								<Text text="Producto 4"/>
+								<Text text="Producto 5"/>
+								<Text text="Producto 6"/>
+							</VBox>
+							<VBox>
+								<Text text="Producto 7"/>
+								<Text text="Producto 8"/>
+								<Text text="Producto 9"/>
+							</VBox>
+							<VBox>
+								<Text text="Producto 7"/>
+								<Text text="Producto 8"/>
+								<Text text="Producto 9"/>
+							</VBox>
+						</l:content>
+					</l:Grid>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
