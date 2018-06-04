@@ -6,7 +6,7 @@
 				<content>
 					<!--Los Grids tienen un total de 12 columnas distribuidas uniformemente dentro del ancho de la pantalla-->
 					<!--Cada elemento ocupará un determinado número de columnas y cuando se hayan superado las 12 se pasará a la fila siguiente-->
-					<l:Grid defaultSpan="XL4 L4 M6 S12" >
+					<l:Grid defaultSpan="XL4 L4 M5 S12" defaultIndent="XL0 L0 M1 S0">
 						<!--Con la propiedad defaultSpan definimos cuántas columnas ocupará cada elemnto en función del tamaño del dispositivo-->
 						<!--Los textos ocuparán 4 columnas de las 12 cuando el tamaño del dispositivo sea muy grande, 6 si es mediano ,...-->
 						<!--Con defaultIndent añadimos columnas en blanco delante de cada blque de columnas-->
